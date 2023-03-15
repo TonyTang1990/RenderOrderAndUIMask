@@ -1,0 +1,13 @@
+# 文件以及目录过滤
+# 过滤library目录
+3DAnd2DMix/Library/
+# 过滤.vs目录
+3DAnd2DMix/.vs/
+# 过滤Temp目录
+3DAnd2DMix/Temp/
+# 过滤obj目录
+3DAnd2DMix/obj/
+# 过滤Log目录
+3DAnd2DMix/Logs/
+# 过滤UI自动生成代码目录
+3DAnd2DMix/UICodeAutogenerate
