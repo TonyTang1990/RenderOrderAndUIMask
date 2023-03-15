@@ -1,24 +1,20 @@
 /*
- * Description:             SpriteRendererInspector.cs
+ * Description:             MeshRendererInspector.cs
  * Author:                  TonyTnag
  * Create Date:             2023/03/14
  */
 
+using System;
 using UnityEditor;
 using UnityEngine;
 
 /// <summary>
-/// SpriteRendererInspector.cs
-/// SpriteRenderer编辑器扩展
+/// MeshRendererInspector.cs
+///  MeshRenderer编辑器扩展
 /// </summary>
 [CustomEditor(typeof(SpriteRenderer))]
-public class SpriteRendererInspector : Editor
+public class MeshRendererInspector : Editor
 {
-    /// <summary>
-    /// SortingLayer属性
-    /// </summary>
-    private SerializedProperty mSortingLayerProperty;
-
     /// <summary>
     /// SortingOrder属性
     /// </summary>
@@ -29,20 +25,40 @@ public class SpriteRendererInspector : Editor
     /// </summary>
     private SerializedProperty mMaterialsProperty;
 
+    /// <summary>
+    /// 目标组件
+    /// </summary>
+    private MeshRenderer mTarget;
+
+    /// <summary>
+    /// SortingLayer名数组
+    /// </summary>
+    private string[] mSortingLayersNameArray;
+
+    /// <summary>
+    /// SortingLayer索引
+    /// </summary>
+    private int mSortingLayerIndex;
+
     private void Enable()
     {
-        mSortingLayerProperty = serializedObject.FindProperty("m_SortingLayer");
+        mTarget = (MeshRenderer)target;
+        mSortingLayersNameArray = SortingLayer.layers.Select(x => x.name).ToArray();
         mSortingOrderProperty = serializedObject.FindProperty("m_SortingOrder");
-        mMaterialsProperty = serializedObject.FindProperty("m_Materials")
+        mMaterialsProperty = serializedObject.FindProperty("m_Materials");
+        UpdateSortingLayerIndex();
     }
 
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
         serializedObject.Update();
-        if(mSortingLayerProperty != null)
+        EditorGUI.BeginChangeCheck();
+        var selectedIndex = EditorGUILayout.Popup("SortingLayerName", mSortingLayersNameArray, mSortingLayerIndex);
+        if(EditorGUI.EndChangeCheck())
         {
-            EditorGUILayout.PropertyField(mSortingLayerProperty);
+            mTarget.sortingLayerName = SortingLayer.layers[selectedIndex].name;
+            UpdateSortingLayerIndex();
         }
         if(mSortingOrderProperty != null)
         {
@@ -70,5 +86,23 @@ public class SpriteRendererInspector : Editor
             }
         }
         serializedObject.ApplyModifiedProeprties();
+    }
+
+    /// <summary>
+    /// 更新SortingLayer索引
+    /// </summary>
+    private void UpdateSortingLayerIndex()
+    {
+        mSortingLayerIndex = Array.FindIndex(mSortingLayersNameArray, FindSortingLayerNameIndex);
+    }
+
+    /// <summary>
+    /// 查找当前SortingLayerName索引
+    /// </summary>
+    /// <param name="sortingName"></param>
+    /// <returns></returns>
+    private bool FindSortingLayerNameIndex(string sortingName)
+    {
+        return mTarget.sortingLayerName == mSortingLayersNameArray;
     }
 }

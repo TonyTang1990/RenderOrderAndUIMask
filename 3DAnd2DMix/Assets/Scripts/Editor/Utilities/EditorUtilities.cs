@@ -11,12 +11,12 @@ using UnityEngine;
 /// EditorUtilities.cs
 /// Editor工具类
 /// </summary>
-pubic static class EditorUtilities
+public static class EditorUtilities
 {
     /// <summary>
     /// 打印所有SerializedOject的属性
     /// </summary>
-    pubic static bool PrintAllProperty(SerializedObject serializedObject)
+    public static bool PrintAllProperty(SerializedObject serializedObject)
     {
         if(serializedObject == null)
         {
@@ -36,7 +36,7 @@ pubic static class EditorUtilities
     /// <summary>
     /// 打印所有SerializedOject的可见属性
     /// </summary>
-    pubic static bool PrintAllVisibleProperty(SerializedObject serializedObject)
+    public static bool PrintAllVisibleProperty(SerializedObject serializedObject)
     {
         if(serializedObject == null)
         {

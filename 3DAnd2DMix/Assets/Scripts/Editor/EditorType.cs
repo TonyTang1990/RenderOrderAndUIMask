@@ -11,7 +11,7 @@ using UnityEngine;
 /// EditorType.cs
 /// Editor类型信息静态类
 /// </summary>
-pubic static class EditorType
+public static class EditorType
 {
     /// <summary>
     /// 材质类型

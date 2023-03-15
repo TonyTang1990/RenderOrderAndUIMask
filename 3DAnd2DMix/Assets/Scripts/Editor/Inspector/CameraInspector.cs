@@ -11,8 +11,9 @@ using UnityEngine;
 /// CameraInspector.cs
 /// Camera组件Inspector扩展显示
 /// </summary>
+[CanEditMultipleObjects]
 [CustomEditor(typeof(Camera))]
-public class CameraInspector : Editor
+public class CameraInspector : CameraEditor
 {
     // Note:
     // opaqueSortMode和TransparentSortMode属性好像不属于Serialized成员，FindProperty得不到
@@ -22,26 +23,17 @@ public class CameraInspector : Editor
     /// </summary>
     private Camera mTarget;
 
-    /// <summary>
-    /// opaqueSortMode属性
-    /// </summary>
-    private SerializedProperty mOpaqueSortModeProperty;
-
-    /// <summary>
-    /// transparencySortMode属性
-    /// </summary>
-    private SerializedProperty mTransparencySortModeProperty;
-
-    private void Enable()
-    {
-        mTarget = (Camera)target;
-    }
+    // Note:
+    // 这里不能重写OnEnable，会导致CameraEditor原始部分流程异常
 
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
-        serializedObject.Update();
-        if(mTarget != null)
+        if(mTarget == null)
+        {
+            mTarget = (Camera)target;
+        }
+        if (mTarget != null)
         {
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.LableField("opaqueSortMode", GUILayout.Width(170f));
@@ -62,6 +54,5 @@ public class CameraInspector : Editor
             }
             EditorGUILayout.EndHorizontal();
         }
-        serializedObject.ApplyModifiedProperties();
     }
 }
