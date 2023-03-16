@@ -59,9 +59,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Editor\Inspector\CameraInspector.cs" />
     <Compile Include="Assets\Scripts\Editor\Inspector\MeshRendererInspector.cs" />
+    <Compile Include="Assets\Scripts\Editor\Inspector\SpriteRendererInspector.cs" />
     <Compile Include="Assets\Scripts\Editor\MenuItem\ObjectMenuItem.cs" />
     <Compile Include="Assets\Scripts\Editor\EditorType.cs" />
-    <Compile Include="Assets\Scripts\Editor\MenuItem\SpriteRendererMenuItem.cs" />
     <Compile Include="Assets\Scripts\Editor\Utilities\EditorUtilities.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -753,6 +753,7 @@
   <ItemGroup>
     <None Include="Assets\Scripts\Editor\Inspector\CameraInspector.cs.meta" />
     <None Include="Assets\Scripts\Editor\Inspector\MeshRendererInspector.cs.meta" />
+    <None Include="Assets\Scripts\Editor\Inspector\SpriteRendererInspector.cs.meta" />
     <None Include="Assets\Scripts\Editor\MenuItem\ObjectMenuItem.cs.meta" />
     <None Include="Assets\Scripts\Editor\Utilities\EditorUtilities.cs.meta" />
   </ItemGroup>
