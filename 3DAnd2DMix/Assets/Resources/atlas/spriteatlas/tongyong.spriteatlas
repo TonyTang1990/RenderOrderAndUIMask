@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: tongyong
+  serializedVersion: 2
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: e1a67d227dd00e44b9052505f9e6b0a3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3f0d52508b8029542a4f4cf59ec4b4ab, type: 3}
+  - {fileID: 21300000, guid: 4e6c44508f8b34c468ed4a8feca332ea, type: 3}
+  - {fileID: 21300000, guid: 36a8c37045771b548b3bd3c5c976edf7, type: 3}
+  - {fileID: 21300000, guid: 65c7df7003fb4dc46ad31e0d21786f50, type: 3}
+  - {fileID: 21300000, guid: 551fe6b054068dd41afb2109f7e319ec, type: 3}
+  - {fileID: 21300000, guid: 23af1ad2905b5e044aa8dcef56cb4cda, type: 3}
+  - {fileID: 21300000, guid: 94c6a6f2cfe07204fb7cf4d38394511e, type: 3}
+  - {fileID: 21300000, guid: d5233d0352b338f40906076212ee3b1f, type: 3}
+  - {fileID: 21300000, guid: 61633f13299957c4e8d3c3de9436b681, type: 3}
+  - {fileID: 21300000, guid: 1907e534389a9144ab2f876759f41d00, type: 3}
+  - {fileID: 21300000, guid: 17af1164da59cc9459fee19e8e9d89e2, type: 3}
+  - {fileID: 21300000, guid: 4e6240947ad0d9649b28b61ae80e30f5, type: 3}
+  - {fileID: 21300000, guid: cee2a4c414abc3c479c807fff54c5ee8, type: 3}
+  - {fileID: 21300000, guid: 0db8cfd5a0210f6428ea68372b0dbf44, type: 3}
+  - {fileID: 21300000, guid: 855bd41617988f94da3550fd3b151b91, type: 3}
+  - {fileID: 21300000, guid: e4406ed6514288b4684e6de9e7073b19, type: 3}
+  - {fileID: 21300000, guid: 8fdb05f682e2ade478d34b12cf7cea9d, type: 3}
+  - {fileID: 21300000, guid: 2476277704b150d4fa06df12d6f20882, type: 3}
+  - {fileID: 21300000, guid: 9abaf4878f7439a4898e4e969c08426a, type: 3}
+  - {fileID: 21300000, guid: b9b5cb286f5d81545af5886ed9066321, type: 3}
+  - {fileID: 21300000, guid: b0efc3386cdcf04449465496bc339299, type: 3}
+  - {fileID: 21300000, guid: 7ca20b09e860fc34eb03bab871eef33d, type: 3}
+  - {fileID: 21300000, guid: b77bcd8994f58224cbd62ccfdfd9c169, type: 3}
+  - {fileID: 21300000, guid: 83bf9f3a192689f48b38549e466f2085, type: 3}
+  - {fileID: 21300000, guid: c9b2389a6d049014994d910918677fed, type: 3}
+  - {fileID: 21300000, guid: b25a5afade9b5684e9df347848a4879c, type: 3}
+  - {fileID: 21300000, guid: 8962335b1e6b5864c978026e405551e2, type: 3}
+  - {fileID: 21300000, guid: e91feaabb74b17f49b49bf7200a9e18b, type: 3}
+  - {fileID: 21300000, guid: 7403591cc3384de419b6d33b347c2b13, type: 3}
+  - {fileID: 21300000, guid: 5a65ea2c283b0ea42b7b0eef8f2b35e7, type: 3}
+  - {fileID: 21300000, guid: e5b57a3c031c0db4eb0f27de998adcfc, type: 3}
+  - {fileID: 21300000, guid: cb28c08c34b2696488366ff985f56678, type: 3}
+  - {fileID: 21300000, guid: c6f6a61e69b57a445abc55ba9faff6db, type: 3}
+  - {fileID: 21300000, guid: 60dc667e1067b6d49af495081ab777b5, type: 3}
+  - {fileID: 21300000, guid: d3b24c9e700e1b8448f96e2da5a2b8b4, type: 3}
+  - {fileID: 21300000, guid: d075bebe855d7b2498835fd4163f7dff, type: 3}
+  - {fileID: 21300000, guid: 06b73bceeb464cb4794a2f0b8109c3e5, type: 3}
+  - {fileID: 21300000, guid: bfeb3d0f2df1c78459c0701ec3d75c7f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - gage_b_fill03
+  - btn_c_grey
+  - checkbox_check
+  - gage_b_empty
+  - btn_b_beige
+  - btn_b_red
+  - btn_c_beige
+  - radio_check
+  - gage_a_empty
+  - btn_a_beige
+  - gage_b_fill02
+  - btn_b_emerald
+  - btn_b_grey
+  - gage_b_fill06
+  - box_b
+  - gage_b_fill_progress
+  - btn_c_emerald
+  - innerbox_a
+  - gage_b_fill08
+  - btn_a_grey
+  - radio_blank
+  - innerbox_a_btn
+  - btn_a_emerald
+  - divider_a
+  - touch
+  - btn_c_red
+  - gage_b_fill01
+  - gage_b_fill05
+  - checkbox_blank
+  - textinput_a
+  - gage_b_fill07
+  - btn_a_red
+  - threshold
+  - box_a
+  - point_beige
+  - box_c
+  - gage_b_fill04
+  - icon_arrowdown
+  m_RenderDataMap: {}
+  m_Tag: tongyong
+  m_IsVariant: 0
+  m_IsPlaceholder: 0

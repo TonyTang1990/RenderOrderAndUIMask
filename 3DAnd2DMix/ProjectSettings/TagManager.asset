@@ -14,7 +14,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - 3DUI
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 3D1
+    uniqueID: 2357329163
+    locked: 0
+  - name: 3D2
+    uniqueID: 1302384751
+    locked: 0
+  - name: 3D3
+    uniqueID: 1911318089
     locked: 0

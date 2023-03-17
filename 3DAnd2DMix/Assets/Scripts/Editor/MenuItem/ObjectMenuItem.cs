@@ -16,23 +16,23 @@ public static class ObjectMenuItem
     /// <summary>
     /// 打印所有对象属性
     /// </summary>
-    [MenuItem("CONTEXT/Object/PrintAllProperties")]
-    static void PrintAllProperties(MenuCommand menuCommand)
+    [MenuItem("CONTEXT/Object/PrintAllProperty")]
+    static void PrintAllProperty(MenuCommand menuCommand)
     {
-        Debug.Log($"PrintAllProperties() menuCommand.context.name:{menuCommand.context.name}");
+        Debug.Log($"PrintAllProperty() menuCommand.context.name:{menuCommand.context.name}");
         var serializedObject = new SerializedObject(menuCommand.context);
-        EditorUtilities.PrintAllProperties(serializedObject);
+        EditorUtilities.PrintAllProperty(serializedObject);
     }
 
     /// <summary>
     /// 打印所有对象可见属性
     /// </summary>
-    [MenuItem("CONTEXT/Object/PrintAllVisibleProperties")]
-    static void PrintAllVisibleProperties(MenuCommand menuCommand)
+    [MenuItem("CONTEXT/Object/PrintAllVisibleProperty")]
+    static void PrintAllVisibleProperty(MenuCommand menuCommand)
     {
-        Debug.Log($"PrintAllVisibleProperties() menuCommand.context.name:{menuCommand.context.name}");
+        Debug.Log($"PrintAllVisibleProperty() menuCommand.context.name:{menuCommand.context.name}");
         var serializedObject = new SerializedObject(menuCommand.context);
-        EditorUtilities.PrintAllVisibleProperties(serializedObject);
+        EditorUtilities.PrintAllVisibleProperty(serializedObject);
     }
 
 }

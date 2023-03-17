@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: tongyong3
+  serializedVersion: 2
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: f397ebd7ca94ef340aabea26407d6974, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 98203d30acd83e34c9e595fbac90025d, type: 3}
+  - {fileID: 21300000, guid: da2f886058ba8914e8f87613a16cb662, type: 3}
+  - {fileID: 21300000, guid: c58b21f045e0a7847905d892a55c3bac, type: 3}
+  - {fileID: 21300000, guid: fb8a46611eec8de498e97e3ab2cbd1c7, type: 3}
+  - {fileID: 21300000, guid: 809919c1b41cc3e4ab5db812909bb953, type: 3}
+  - {fileID: 21300000, guid: 8962ab125556c8640af7d301d5c1e476, type: 3}
+  - {fileID: 21300000, guid: 6da83853981303c46a7e5fbc416b74a1, type: 3}
+  - {fileID: 21300000, guid: eaa141f45a62fa848aa62abe21ff5cef, type: 3}
+  - {fileID: 21300000, guid: a3bba806bc4d8c84e8b5b5087f9fd709, type: 3}
+  - {fileID: 21300000, guid: d74775464fcd6ca439add66fbdd1075a, type: 3}
+  - {fileID: 21300000, guid: daad0e87766d6624ea685b3a164a05bd, type: 3}
+  - {fileID: 21300000, guid: f3e3cd48e615ffc4dbd4cf51eeec4da7, type: 3}
+  - {fileID: 21300000, guid: c3f71d78b1098784797b5677e775ee93, type: 3}
+  - {fileID: 21300000, guid: ec8737698a528504b9609fcb91acea60, type: 3}
+  - {fileID: 21300000, guid: d26ab9699a412ec4e9944e09198b096c, type: 3}
+  - {fileID: 21300000, guid: c399b34a10615c643a6daa0716f27e6c, type: 3}
+  - {fileID: 21300000, guid: 37f07fbaf7f9add4c94fe0ba1ff5db43, type: 3}
+  - {fileID: 21300000, guid: 6d438c1b0313e3142bed5d126b51a5d1, type: 3}
+  - {fileID: 21300000, guid: 6d59c14bafa8e964da8cfbcf089bc0cd, type: 3}
+  - {fileID: 21300000, guid: b336028b079232248828a6b706d78611, type: 3}
+  - {fileID: 21300000, guid: 4b81988b54ef5c24d9896a4bb981be8a, type: 3}
+  - {fileID: 21300000, guid: c9aa06eb754ea5642b95c46e82797022, type: 3}
+  - {fileID: 21300000, guid: 658590fb8da7be2498520e4a4f1c160d, type: 3}
+  - {fileID: 21300000, guid: a6ed557d69d79eb478d940b220e22718, type: 3}
+  - {fileID: 21300000, guid: 313bd1bdad2d49d4e812ba09b35cad76, type: 3}
+  - {fileID: 21300000, guid: 90a9a33e39abc854188aecad83519184, type: 3}
+  - {fileID: 21300000, guid: 60864a6eb1b80bd47b1317fed5105fbc, type: 3}
+  - {fileID: 21300000, guid: 8b05cb7efba1c1e4fab8c463a221903f, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - text_sep_big
+  - slider
+  - store_block_coins
+  - achiev_box_pressed
+  - counter
+  - settings_box
+  - settings_checkbox_lock
+  - reward_stars_2
+  - text_background_big
+  - reward_slots
+  - achiev_stat_que
+  - store_block
+  - store_block_hover
+  - settings_checkbox_on
+  - achiev_stat_fail
+  - reward_stars_1
+  - reward_stars_empty
+  - slider_pointer
+  - scrollbar_pointer
+  - store_block_pressed
+  - reward_slot_info
+  - reward_stars_3
+  - achiev_box_hover
+  - slider_blue
+  - achiev_stat_done
+  - achiev_box
+  - scrollbar
+  - settings_checkbox
+  m_RenderDataMap: {}
+  m_Tag: tongyong3
+  m_IsVariant: 0
+  m_IsPlaceholder: 0
