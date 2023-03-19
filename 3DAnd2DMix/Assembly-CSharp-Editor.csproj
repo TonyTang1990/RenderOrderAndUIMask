@@ -60,10 +60,10 @@
     <Compile Include="Assets\Scripts\Editor\Inspector\UnityInspector\SpriteRendererInspector.cs" />
     <Compile Include="Assets\Scripts\Editor\MenuItem\ObjectMenuItem.cs" />
     <Compile Include="Assets\Scripts\Editor\EditorType.cs" />
-    <Compile Include="Assets\Scripts\Editor\Inspector\UnityInspector\MeshRendererInspector.cs" />
-    <Compile Include="Assets\Scripts\Editor\Inspector\UnityInspector\CameraInspector.cs" />
-    <Compile Include="Assets\Scripts\Editor\Core\UI\UIOrder\UIDepthInspector.cs" />
     <Compile Include="Assets\Scripts\Editor\Inspector\UnityInspector\SkinnedMeshRendererInspector.cs" />
+    <Compile Include="Assets\Scripts\Editor\Inspector\UnityInspector\MeshRendererInspector.cs" />
+    <Compile Include="Assets\Scripts\Editor\Core\UI\UIOrder\UIDepthInspector.cs" />
+    <Compile Include="Assets\Scripts\Editor\Inspector\UnityInspector\CameraInspector.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
