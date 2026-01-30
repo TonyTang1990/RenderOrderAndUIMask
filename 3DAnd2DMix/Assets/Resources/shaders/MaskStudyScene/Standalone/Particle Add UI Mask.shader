@@ -19,7 +19,12 @@ Properties {
 }
 
 Category {
-    Tags { "Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent" "PreviewType"="Plane" }
+    Tags {
+        "Queue"="Transparent"
+        "IgnoreProjector"="True"
+        "RenderType"="Transparent"
+        "PreviewType"="Plane"
+    }
     
     // #### required for Mask ####
     Stencil
@@ -34,7 +39,9 @@ Category {
     Blend SrcAlpha One
     // #### required for Mask ####
     ColorMask [_ColorMask]
-    Cull Off Lighting Off ZWrite Off
+    Cull Off
+    Lighting Off
+    ZWrite Off
 
     SubShader {
         Pass {
@@ -127,8 +134,6 @@ Category {
                 #ifdef UNITY_UI_ALPHACLIP
                     clip(col.a - 0.001);
                 #endif
-
-                col.rgb *= col.a;
 
                 return col;
             }
