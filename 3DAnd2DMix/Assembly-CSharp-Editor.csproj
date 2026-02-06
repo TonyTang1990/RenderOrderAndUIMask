@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Editor\Inspector\UnityInspector\CameraInspector.cs" />
     <Compile Include="Assets\Scripts\Editor\Inspector\UnityInspector\MeshRendererInspector.cs" />
     <Compile Include="Assets\Scripts\Editor\MenuItem\ObjectMenuItem.cs" />
+    <Compile Include="Assets\Scripts\Editor\Core\UI\UIMask\PenetrateImageEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
