@@ -1,5 +1,5 @@
 /*
- * Description:             PenetrateImageEditor.cs
+ * Description:             CustomImageEditor.cs
  * Author:                  TONYTANG
  * Create Date:             2026/02/06
  */
@@ -11,26 +11,32 @@ using UnityEditor.UI;
 using UnityEngine;
 
 /// <summary>
-/// PenetrateImageEditor.cs
-/// PenetrateImage的Inspector扩展
+/// CustomImageEditor.cs
+/// CustomImage的Inspector扩展
 /// </summary>
-[CustomEditor(typeof(PenetrateImage))]
+[CustomEditor(typeof(CustomImage))]
 [CanEditMultipleObjects]
-public class PenetrateImageEditor : ImageEditor
+public class CustomImageEditor : ImageEditor
 {
     /// <summary>
-    /// 是否激活透明Alpha穿透阈值属性
+    /// 是否开启反向遮罩属性
+    /// </summary>
+    private SerializedProperty mEnableInvertMask;
+
+    /// <summary>
+    /// 是否激活透明Alpha透明可点击阈值属性
     /// </summary> <summary>
     private SerializedProperty mEnableAlphaHitTestMinimusThreshold;
 
     /// <summary>
-    /// 透明Alpha穿透阈值属性
+    /// 透明Alpha可点击阈值属性
     /// </summary>
     private SerializedProperty mAlphaHitTestMinimumThreshold;
     
     protected override void OnEnable()
     {
         base.OnEnable();
+        mEnableInvertMask = serializedObject.FindProperty("EnableInvertMask");
         mEnableAlphaHitTestMinimusThreshold = serializedObject.FindProperty("EnableAlphaHitTestMinimusThreshold");
         mAlphaHitTestMinimumThreshold = serializedObject.FindProperty("AlphaHitTestMinimumThreshold");
     }
@@ -41,6 +47,8 @@ public class PenetrateImageEditor : ImageEditor
 
         serializedObject.Update();
 
+        EditorGUILayout.PropertyField(mEnableInvertMask);
+
         EditorGUI.BeginChangeCheck();
         EditorGUILayout.PropertyField(mEnableAlphaHitTestMinimusThreshold);
         bool enableChanged = EditorGUI.EndChangeCheck();
@@ -49,7 +57,6 @@ public class PenetrateImageEditor : ImageEditor
         EditorGUILayout.PropertyField(mAlphaHitTestMinimumThreshold);
         bool thresholdChanged = EditorGUI.EndChangeCheck();
 
-        // 应用序列化属性更改
         serializedObject.ApplyModifiedProperties();
 
         if (enableChanged || thresholdChanged)
@@ -69,7 +76,7 @@ public class PenetrateImageEditor : ImageEditor
         }
         foreach (var targetObj in targets)
         {
-            var penetrateImage = targetObj as PenetrateImage;
+            var penetrateImage = targetObj as CustomImage;
             if (penetrateImage != null)
             {
                 penetrateImage.UpdateAlphaHitTestMinimumThreshold();

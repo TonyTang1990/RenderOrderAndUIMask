@@ -1258,7 +1258,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 464854074}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d779f2eb8cab43e49ba63a3e23c7d9b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 077a33954f1d56945b94b184bfdc5c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -1279,6 +1279,9 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  EnableInvertMask: 1
+  EnableAlphaHitTestMinimusThreshold: 0
+  AlphaHitTestMinimumThreshold: 0.1
 --- !u!1 &487406839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,6 +1538,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+  EnableInvertMask: 0
   EnableAlphaHitTestMinimusThreshold: 1
   AlphaHitTestMinimumThreshold: 0.1
 --- !u!1 &534741516

@@ -69,14 +69,13 @@
     <Compile Include="Assets\52SpecialEffectPack\EffectEditor\ShurikenEffectEditor\csShurikenEffectEditor.cs" />
     <Compile Include="Assets\52SpecialEffectPack\Animation&amp;Script\csShowAllEffect.cs" />
     <Compile Include="Assets\52SpecialEffectPack\Animation&amp;Script\csParticleMove.cs" />
-    <Compile Include="Assets\Scripts\Core\UI\UIMask\InvertMaskImage.cs" />
-    <Compile Include="Assets\Scripts\Core\UI\UIMask\PenetrateImage.cs" />
     <Compile Include="Assets\52SpecialEffectPack\Animation&amp;Script\csDestroyEffect.cs" />
     <Compile Include="Assets\52SpecialEffectPack\Animation&amp;Script\csMouseOrbit.cs" />
     <Compile Include="Assets\52SpecialEffectPack\EffectEditor\ShurikenEffectEditor\csShurikenEffectChanger.cs" />
     <Compile Include="Assets\Scripts\Core\UI\UIOrder\UIDepth.cs" />
     <Compile Include="Assets\Scripts\Core\Extension\GameObjectExtension.cs" />
     <Compile Include="Assets\Scripts\Core\UI\MainUIInvertMask.cs" />
+    <Compile Include="Assets\Scripts\Core\UI\UIMask\CustomImage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\shaders\MaskStudyScene\UI\UI-Default.shader" />
