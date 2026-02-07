@@ -48,7 +48,10 @@ public class CustomImage : Image
     /// </summary>
     public void UpdateAlphaHitTestMinimumThreshold()
     {
-        alphaHitTestMinimumThreshold = EnableAlphaHitTestMinimusThreshold ? AlphaHitTestMinimumThreshold : 0f;
+        if(EnableAlphaHitTestMinimusThreshold)
+        {
+            alphaHitTestMinimumThreshold = AlphaHitTestMinimumThreshold;
+        }
     }
     
     /// <summary>
