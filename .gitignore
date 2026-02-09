@@ -1,13 +1,13 @@
 # 文件以及目录过滤
 # 过滤library目录
-3DAnd2DMix/Library/
+RenderOrderAndUIMask/Library/
 # 过滤.vs目录
-3DAnd2DMix/.vs/
+RenderOrderAndUIMask/.vs/
 # 过滤Temp目录
-3DAnd2DMix/Temp/
+RenderOrderAndUIMask/Temp/
 # 过滤obj目录
-3DAnd2DMix/obj/
+RenderOrderAndUIMask/obj/
 # 过滤Log目录
-3DAnd2DMix/Logs/
+RenderOrderAndUIMask/Logs/
 # 过滤UI自动生成代码目录
-3DAnd2DMix/UICodeAutogenerate
+RenderOrderAndUIMask/UICodeAutogenerate

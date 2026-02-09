@@ -32,6 +32,7 @@ public class CustomImage : Image
     /// 仅当EnableAlphaHitTestMinimusThreshold=true时有效
     /// </summary>
     [Header("透明Alpha可点击阈值")]
+    [Tooltip("<=0表示全部可点击，>1表示全不可点击，其他值表示小于该值不可点击")]
     public float AlphaHitTestMinimumThreshold = 0.1f;
 
     protected override void Start()
