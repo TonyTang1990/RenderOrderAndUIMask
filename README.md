@@ -8,4 +8,4 @@
 
 [渲染顺序](https://tonytang1990.github.io/2026/01/29/%E6%B8%B2%E6%9F%93%E9%A1%BA%E5%BA%8F/)
 
-[UGUI遮罩](https://tonytang1990.github.io/2026/01/29/UGUI遮罩原理/)
+[UGUI遮罩和粒子层级](https://tonytang1990.github.io/2026/01/29/UGUI%E9%81%AE%E7%BD%A9%E5%92%8C%E7%B2%92%E5%AD%90%E5%B1%82%E7%BA%A7/)
